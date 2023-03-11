@@ -59,19 +59,31 @@ const Formulario = () => {
                 </h1>
             </div>
             <div>
-                <label htmlFor="Name">Nombre del animal: </label>
+                <label htmlFor="Name" style={{
+                    paddingRight: "2em",
+                    fontFamily: "sans-serif"
+                    }}>Nombre del animal: </label>
                 <input id='Name' type="text" onChange={handleChangeName} value={nombre} />
             </div>
             <div>
-                <label htmlFor="Specie">Especie del animal: </label>
+                <label htmlFor="Specie" style={{
+                    paddingRight: "2em",
+                    fontFamily: "sans-serif"
+                    }}>Especie del animal: </label>
                 <input id='Specie' type="text" onChange={handleChangeSpecie} value={especie} />
             </div>
             <div>
-                <label htmlFor="Age">Años: </label>
+                <label htmlFor="Age" style={{
+                    paddingRight: "2em",
+                    fontFamily: "sans-serif"
+                    }}>Años: </label>
                 <input id='Age' type="number" min={0} max={500} onChange={handleChangeAge} value={edad} />
             </div>
             <div>
-                <input type="submit" value="Enviar" />
+                <input type="submit" value="Enviar" style={{
+                    width: "15.5em",
+                    marginTop: "3em",
+                }}/>
             </div>
             {seMuestraAlerta && <dialog open={seMuestraAlerta}>
                 {mensajeDeAlerta}
